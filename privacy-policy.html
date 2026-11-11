@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Kebijakan Privasi Smart Tools Assist" />
+    <title>Kebijakan Privasi | Smart Tools Assist</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --green: #16865b;
+        --dark: #106744;
+        --soft: #eaf7f0;
+        --ink: #20312a;
+        --muted: #66756d;
+        --line: #e7eee9;
+      }
+      body {
+        background: #f5f8f6;
+        color: var(--ink);
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          sans-serif;
+        line-height: 1.7;
+      }
+      .topbar {
+        background: rgba(255, 255, 255, 0.96);
+        border-bottom: 1px solid var(--line);
+      }
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        border-radius: 13px;
+        color: white;
+        background: linear-gradient(145deg, #20a56d, #116b49);
+        font-size: 1.25rem;
+      }
+
+      .brand-logo {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+      .hero {
+        background:
+          radial-gradient(
+            circle at 85% 20%,
+            rgba(255, 255, 255, 0.17),
+            transparent 25%
+          ),
+          linear-gradient(120deg, #116b49, #16865b 55%, #24a875);
+        color: white;
+        border-radius: 0 0 30px 30px;
+        padding: 65px 0 88px;
+      }
+      .hero .eyebrow {
+        display: inline-flex;
+        gap: 8px;
+        padding: 7px 12px;
+        border: 1px solid #ffffff55;
+        background: #ffffff18;
+        border-radius: 30px;
+        font-size: 0.82rem;
+      }
+      .hero h1 {
+        font-weight: 750;
+        letter-spacing: -0.035em;
+      }
+      .hero p {
+        color: #ffffffd9;
+        max-width: 680px;
+      }
+      .language-switch {
+        display: flex;
+        gap: 4px;
+        padding: 4px;
+        background: #f0f5f2;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+      }
+      .language-switch button {
+        border: 0;
+        border-radius: 9px;
+        padding: 7px 13px;
+        color: #53645b;
+        background: transparent;
+        font-size: 0.88rem;
+        font-weight: 600;
+      }
+      .language-switch button.active {
+        color: white;
+        background: var(--green);
+      }
+      .content-wrap {
+        margin-top: -42px;
+        position: relative;
+      }
+      .policy-card {
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        box-shadow: 0 18px 55px #1c3c2b14;
+        overflow: hidden;
+      }
+      .policy-intro {
+        padding: 28px 32px;
+        background: linear-gradient(110deg, #f4fbf7, #fff);
+        border-bottom: 1px solid var(--line);
+      }
+      .policy-body {
+        padding: 12px 32px 32px;
+      }
+      .policy-section {
+        padding: 25px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .policy-section:last-child {
+        border: 0;
+      }
+      .section-number {
+        width: 34px;
+        height: 34px;
+        flex: 0 0 34px;
+        display: grid;
+        place-items: center;
+        border-radius: 11px;
+        color: var(--dark);
+        background: var(--soft);
+        font-weight: 750;
+      }
+      .policy-section h2 {
+        font-size: 1.12rem;
+        font-weight: 720;
+        margin: 2px 0 12px;
+      }
+      .policy-section p,
+      .policy-section li {
+        color: #52635a;
+      }
+      .policy-section ul {
+        padding-left: 1.2rem;
+        margin-bottom: 0;
+      }
+      .policy-section li {
+        padding: 3px 0;
+      }
+      .info-note {
+        border: 1px solid #dcefe4;
+        background: #f4fbf7;
+        border-radius: 14px;
+        padding: 16px 18px;
+        color: #426151;
+      }
+      .contact-link {
+        color: var(--dark);
+        font-weight: 650;
+        text-decoration: none;
+      }
+      .contact-link:hover {
+        text-decoration: underline;
+      }
+
+      .highlight-alert-danger {
+        margin-top: 15px;
+        background: #ffe4e4;
+        border: 1px solid #efc8c8;
+        border-radius: 14px;
+        padding: 8px 18px;
+        color: #5b2424;
+        font-size: 0.92rem;
+      }
+
+      footer {
+        color: #78877f;
+        font-size: 0.9rem;
+      }
+      @media (max-width: 575.98px) {
+        .hero {
+          padding: 48px 0 76px;
+          border-radius: 0 0 22px 22px;
+        }
+        .content-wrap {
+          margin-top: -34px;
+        }
+        .policy-intro {
+          padding: 23px 21px;
+        }
+        .policy-body {
+          padding: 5px 21px 22px;
+        }
+        .policy-section {
+          padding: 21px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar topbar py-3">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand d-flex align-items-center gap-2 mb-0" href=""
+          ><span class="brand-mark"><img src="../dist/logo.png" alt="Smart Tools Assist" class="brand-logo"></span
+          ><span class="fw-bold"
+            >Smart Tools Assist</span
+          ></a
+        >
+        <div
+          class="language-switch"
+          role="group"
+          aria-label="Language selector"
+        >
+          <button
+            type="button"
+            id="btn-id"
+            class="active"
+            aria-pressed="true"
+            onclick="setLanguage('id')"
+          >
+            Indonesia
+          </button>
+          <button
+            type="button"
+            id="btn-en"
+            aria-pressed="false"
+            onclick="setLanguage('en')"
+          >
+            English
+          </button>
+        </div>
+      </div>
+    </nav>
+    <header class="hero">
+      <div class="container">
+        <span class="eyebrow mb-3"
+          ><i class="bi bi-shield-check"></i
+          ><span
+            data-id="Transparansi dan perlindungan data"
+            data-en="Transparency and data protection"
+            >Transparansi dan perlindungan data</span
+          ></span
+        >
+        <h1
+          class="display-5 mb-3"
+          data-id="Kebijakan Privasi"
+          data-en="Privacy Policy"
+        >
+          Kebijakan Privasi
+        </h1>
+        <div>
+          <div class="updated">
+            <span data-id="Terakhir diperbarui:" data-en="Last updated:"
+              >Terakhir diperbarui:</span
+            >
+            10 November 2026
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container content-wrap pb-5">
+      <article class="policy-card">
+        <div class="policy-intro d-flex gap-3">
+          <span class="section-number"
+            ><i class="bi bi-file-earmark-text"></i
+          ></span>
+          <div>
+            <h2
+              class="h5 fw-bold mb-1"
+              data-id="Tentang ekstensi ini"
+              data-en="About this extension"
+            >
+              Tentang ekstensi ini
+            </h2>
+            <p
+              class="mb-0 text-secondary"
+              data-id="Smart Tools Assist adalah ekstensi yang menyediakan fitur tambahan untuk membantu pengguna dalam mengakses dan mengelola informasi pada sistem informasi manajemen puskesmas."
+              data-en="Smart Tools Assist is an extension that provides additional features to assist users in accessing and managing information within the community health center (puskesmas) management information system."
+            >
+              Smart Tools Assist adalah ekstensi yang menyediakan fitur tambahan
+              untuk membantu pengguna dalam mengakses dan mengelola informasi
+              pada sistem informasi manajemen puskesmas.
+            </p>
+          </div>
+        </div>
+        <div class="policy-body">
+          <section class="policy-section d-flex gap-3">
+            <span class="section-number">1</span>
+            <div>
+              <h2
+                data-id="Data yang Dikumpulkan dan Diproses"
+                data-en="Data Collection and Processing"
+              >
+                Data yang Dikumpulkan dan Diproses
+              </h2>
+              <p
+                data-id="Dalam rangka menyediakan, mengoperasikan, dan meningkatkan fungsionalitas ekstensi, Smart Tools Assist dapat mengakses dan memproses beberapa jenis data sesuai dengan fitur yang digunakan oleh pengguna, meliputi:"
+                data-en="To provide, operate, and improve the functionality of the extension, Smart Tools Assist may access and process certain types of data depending on the features used by the user, including:"
+              >
+                Dalam rangka menyediakan, mengoperasikan, dan meningkatkan
+                fungsionalitas ekstensi, Smart Tools Assist dapat mengakses dan
+                memproses beberapa jenis data sesuai dengan fitur yang digunakan
+                oleh pengguna, meliputi:
+              </p>
+              <ul>
+                <li>
+                  <strong
+                    data-id="Nomor Identitas Pengguna :"
+                    data-en="User Identification Number :"
+                    >Nomor Identitas Pengguna:</strong
+                  >
+                  <span
+                    data-id="Digunakan untuk keperluan verifikasi identitas, serta pencarian informasi riwayat kunjungan melalui server terpisah yang dikelola oleh developer."
+                    data-en="Used for identity verification and retrieving visit history information through a separate server managed by the developer."
+                    >Digunakan untuk keperluan verifikasi identitas, serta
+                    pencarian informasi riwayat kunjungan melalui server
+                    terpisah yang dikelola oleh developer.</span
+                  >
+                </li>
+                <li>
+                  <strong
+                    data-id="Informasi Riwayat Kunjungan:"
+                    data-en="Visit history information:"
+                    >Informasi Riwayat Kunjungan:</strong
+                  >
+                  <span
+                    data-id="Informasi yang diperoleh melalui layanan riwayat eksternal untuk mendukung penyediaan informasi pelayanan dan pengingat jadwal kunjungan."
+                    data-en="Information obtained through an external history service to support the provision of healthcare service information and visit schedule reminders."
+                    >Informasi yang diperoleh melalui layanan riwayat eksternal
+                    untuk mendukung penyediaan informasi pelayanan dan pengingat
+                    jadwal kunjungan.</span
+                  >
+                </li>
+                <li>
+                  <strong
+                    data-id="Pengaturan ekstensi:"
+                    data-en="Extension settings:"
+                    >Pengaturan ekstensi:</strong
+                  >
+                  <span
+                    data-id="Meliputi preferensi aktivasi fitur, pengaturan interval Auto Reload, serta konfigurasi lainnya yang disimpan secara lokal melalui mekanisme penyimpanan ekstensi Google Chrome."
+                    data-en="Includes feature activation preferences, Auto Reload interval settings, and other configurations stored locally using Google Chrome's extension storage mechanisms."
+                    >Meliputi preferensi aktivasi fitur, pengaturan interval
+                    Auto Reload, serta konfigurasi lainnya yang disimpan secara
+                    lokal melalui mekanisme penyimpanan ekstensi Google
+                    Chrome.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="policy-section d-flex gap-3">
+            <span class="section-number">2</span>
+            <div>
+              <h2
+                data-id="Pengiriman dan Pemrosesan Data"
+                data-en="Data Transmission and Processing"
+              >
+                Pengiriman dan Pemrosesan Data
+              </h2>
+              <p
+                data-id="Untuk mendukung proses verifikasi identitas dan penyediaan fitur riwayat kunjungan, ekstensi dapat mengirimkan Nomor Identitas Pengguna beserta informasi terkait yang diperlukan ke server terpisah yang dikelola oleh developer untuk diproses sesuai dengan tujuan penggunaan fitur tersebut."
+                data-en="To support identity verification and the provision of visit history features, the extension may transmit the User Identification Number and other necessary related information to a separate server managed by the developer for processing in accordance with the purposes of the respective features."
+              >
+                Untuk mendukung proses verifikasi identitas dan penyediaan fitur
+                riwayat kunjungan, ekstensi dapat mengirimkan Nomor Identitas
+                Pengguna beserta informasi terkait yang diperlukan ke server
+                terpisah yang dikelola oleh developer untuk diproses sesuai
+                dengan tujuan penggunaan fitur tersebut.
+              </p>
+              <p
+                data-id="Server tersebut digunakan untuk mendukung penyediaan layanan ekstensi, dengan tujuan sebagai berikut:"
+                data-en="The server is used to support the extension's services for the following purposes:"
+              >
+                Server tersebut digunakan untuk mendukung penyediaan layanan
+                ekstensi, dengan tujuan sebagai berikut:
+              </p>
+              <ul>
+                <li
+                  data-id="Verifikasi Identitas: Memverifikasi identitas pengguna berdasarkan Nomor Identitas Pengguna yang dikirimkan."
+                  data-en="Identity Verification: To verify user identity based on the submitted User Identification Number."
+                >
+                  Verifikasi Identitas: Memverifikasi identitas pengguna
+                  berdasarkan Nomor Identitas Pengguna yang dikirimkan.
+                </li>
+                <li
+                  data-id="Pencarian Riwayat Kunjungan: Memproses permintaan pencarian dan pengambilan informasi riwayat kunjungan melalui layanan yang tersedia."
+                  data-en="Visit History Lookup: To process requests for searching and retrieving visit history information through the available service."
+                >
+                  Pencarian Riwayat Kunjungan: Memproses permintaan pencarian
+                  dan pengambilan informasi riwayat kunjungan melalui layanan
+                  yang tersedia.
+                </li>
+                <li
+                  data-id="Penyediaan Informasi: Menyediakan informasi pendukung sesuai dengan fitur ekstensi yang digunakan oleh pengguna."
+                  data-en="Information Provision: To provide supporting information according to the extension features used by the user."
+                >
+                  Penyediaan Informasi: Menyediakan informasi pendukung sesuai
+                  dengan fitur ekstensi yang digunakan oleh pengguna.
+                </li>
+              </ul>
+              <p
+                class="mt-3 mb-0"
+                data-id="Pengiriman data ke server dilakukan melalui koneksi internet ketika pengguna mengakses atau menjalankan fitur yang memerlukan pemrosesan data tersebut."
+                data-en="Data is transmitted to the server over the internet when users access or use features that require such data processing."
+              >
+                Pengiriman data ke server dilakukan melalui koneksi internet
+                ketika pengguna mengakses atau menjalankan fitur yang memerlukan
+                pemrosesan data tersebut.
+              </p>
+            </div>
+          </section>
+
+          <section class="policy-section d-flex gap-3">
+            <span class="section-number">3</span>
+            <div>
+              <h2 data-id="Penyimpanan Data" data-en="Data Storage">
+                Penyimpanan Data
+              </h2>
+              <p
+                data-id="Pengaturan dan preferensi ekstensi, seperti aktivasi fitur dan interval Auto Reload, disimpan secara lokal menggunakan mekanisme penyimpanan Google Chrome."
+                data-en="Extension settings and preferences, such as feature activation and Auto Reload intervals, are stored locally using Google Chrome's storage mechanisms."
+              >
+                Pengaturan dan preferensi ekstensi, seperti aktivasi fitur dan
+                interval Auto Reload, disimpan secara lokal menggunakan
+                mekanisme penyimpanan Google Chrome.
+              </p>
+              <p
+                class="mb-0"
+                data-id="Data yang dikirimkan ke server developer untuk keperluan verifikasi identitas dan pencarian informasi riwayat kunjungan hanya diproses untuk memenuhi permintaan pengguna. Developer tidak menyimpan data tersebut secara permanen maupun menggunakannya untuk keperluan lain di luar fungsi layanan ekstensi."
+                data-en="Data transmitted to the developer's server for identity verification and visit history lookup is processed solely to fulfill user requests. The developer does not permanently store such data or use it for purposes beyond the extension's intended functionality."
+              >
+                Data yang dikirimkan ke server developer untuk keperluan
+                verifikasi identitas dan pencarian informasi riwayat kunjungan
+                hanya diproses untuk memenuhi permintaan pengguna. Developer
+                tidak menyimpan data tersebut secara permanen maupun
+                menggunakannya untuk keperluan lain di luar fungsi layanan
+                ekstensi.
+              </p>
+              <div
+                class="highlight-alert-danger"
+                data-id="Setelah proses permintaan selesai, data tidak disimpan sebagai basis data atau arsip oleh developer."
+                data-en="Once the request has been processed, the data is not retained in any database or archive by the developer."
+              >
+                Setelah proses permintaan selesai, data tidak disimpan sebagai
+                basis data atau arsip oleh developer.
+              </div>
+            </div>
+          </section>
+
+          <section class="policy-section d-flex gap-3">
+            <span class="section-number">4</span>
+            <div>
+              <h2
+                data-id="Pembagian Data kepada Pihak Ketiga"
+                data-en="Sharing Data with Third Parties"
+              >
+                Pembagian Data kepada Pihak Ketiga
+              </h2>
+              <p
+                data-id="Developer berkomitmen untuk menjaga kerahasiaan dan privasi data pengguna. Developer tidak menjual, memperdagangkan, membagikan, atau menggunakan data pribadi pengguna untuk kepentingan komersial, periklanan, maupun tujuan lain di luar fungsi ekstensi."
+                data-en="The developer is committed to maintaining the confidentiality and privacy of user data. The developer does not sell, trade, share, or use users' personal data for commercial purposes, advertising, or any purposes unrelated to the extension's functionality."
+              >
+                Developer berkomitmen untuk menjaga kerahasiaan dan privasi data
+                pengguna. Developer tidak menjual, memperdagangkan, membagikan,
+                atau menggunakan data pribadi pengguna untuk kepentingan
+                komersial, periklanan, maupun tujuan lain di luar fungsi
+                ekstensi.
+              </p>
+              <p
+                class="mb-0"
+                data-id="Data yang dikirimkan ke server developer hanya diproses untuk keperluan verifikasi identitas dan pencarian informasi riwayat kunjungan sesuai dengan fitur yang digunakan. Data tersebut tidak disimpan atau diteruskan kepada pihak ketiga setelah proses permintaan selesai."
+                data-en="Data transmitted to the developer's server is processed solely for identity verification and visit history lookup, depending on the features used. Such data is not stored or forwarded to third parties after the request has been processed."
+              >
+                Data yang dikirimkan ke server developer hanya diproses untuk
+                keperluan verifikasi identitas dan pencarian informasi riwayat
+                kunjungan sesuai dengan fitur yang digunakan. Data tersebut
+                tidak disimpan atau diteruskan kepada pihak ketiga setelah
+                proses permintaan selesai.
+              </p>
+            </div>
+          </section>
+
+          <section class="policy-section d-flex gap-3">
+            <span class="section-number">5</span>
+            <div>
+              <h2 data-id="Keamanan Data" data-en="Data Security">
+                Keamanan Data
+              </h2>
+              <p
+                class="mb-0"
+                data-id="Developer menerapkan langkah-langkah pengamanan yang wajar untuk melindungi data selama proses pengiriman dan pemrosesan. Namun, tidak ada metode transmisi atau penyimpanan elektronik yang dapat dijamin sepenuhnya bebas dari risiko keamanan."
+                data-en="The developer applies reasonable safeguards to protect data during transmission and processing. However, no electronic transmission or storage method can be guaranteed to be completely free from security risks."
+              >
+                Developer menerapkan langkah-langkah pengamanan yang wajar untuk
+                melindungi data selama proses pengiriman dan pemrosesan. Namun,
+                tidak ada metode transmisi atau penyimpanan elektronik yang
+                dapat dijamin sepenuhnya bebas dari risiko keamanan.
+              </p>
+            </div>
+          </section>
+
+          <section class="policy-section d-flex gap-3">
+            <span class="section-number">6</span>
+            <div>
+              <h2
+                data-id="Kontrol dan Hak Pengguna"
+                data-en="User Controls and Rights"
+              >
+                Kontrol dan Hak Pengguna
+              </h2>
+              <p
+                data-id="Pengguna dapat mengaktifkan atau menonaktifkan fitur ekstensi sesuai kebutuhan. Pengguna juga dapat menghapus ekstensi dari peramban untuk menghentikan penggunaan fitur yang disediakan."
+                data-en="Users can enable or disable extension features according to their needs. Users may also remove the extension from their browser to stop using its features."
+              >
+                Pengguna dapat mengaktifkan atau menonaktifkan fitur ekstensi
+                sesuai kebutuhan. Pengguna juga dapat menghapus ekstensi dari
+                peramban untuk menghentikan penggunaan fitur yang disediakan.
+              </p>
+              <p
+                class="mb-0"
+                data-id="Untuk mengajukan permintaan akses, koreksi, atau penghapusan data yang diproses pada server developer, pengguna dapat menghubungi developer melalui informasi kontak di bawah."
+                data-en="To request access to, correction of, or deletion of data processed on the developer's server, users may contact the developer using the contact information below."
+              >
+                Untuk mengajukan permintaan akses, koreksi, atau penghapusan
+                data yang diproses pada server developer, pengguna dapat
+                menghubungi developer melalui informasi kontak di bawah.
+              </p>
+            </div>
+          </section>
+
+          <section class="policy-section d-flex gap-3">
+            <span class="section-number">7</span>
+            <div>
+              <h2
+                data-id="Perubahan Kebijakan Privasi"
+                data-en="Changes to This Privacy Policy"
+              >
+                Perubahan Kebijakan Privasi
+              </h2>
+              <p
+                class="mb-0"
+                data-id="Developer berhak memperbarui atau mengubah kebijakan privasi ini sewaktu-waktu untuk menyesuaikan perkembangan fitur, perubahan layanan, maupun ketentuan peraturan perundang-undangan yang berlaku. Setiap perubahan akan dipublikasikan melalui halaman ini dan mulai berlaku sejak tanggal pembaruan dipublikasikan. Pengguna disarankan untuk meninjau kebijakan privasi ini secara berkala agar tetap mengetahui informasi terbaru mengenai pengelolaan dan perlindungan data."
+                data-en="The developer reserves the right to update or modify this Privacy Policy from time to time to reflect changes in features, services, or applicable laws and regulations. Any changes will be published on this page and will take effect on the date they are published. Users are encouraged to review this Privacy Policy periodically to stay informed about the latest information regarding data handling and protection."
+              >
+                Developer berhak memperbarui atau mengubah kebijakan privasi ini
+                sewaktu-waktu untuk menyesuaikan perkembangan fitur, perubahan
+                layanan, maupun ketentuan peraturan perundang-undangan yang
+                berlaku. Setiap perubahan akan dipublikasikan melalui halaman
+                ini dan mulai berlaku sejak tanggal pembaruan dipublikasikan.
+                Pengguna disarankan untuk meninjau kebijakan privasi ini secara
+                berkala agar tetap mengetahui informasi terbaru mengenai
+                pengelolaan dan perlindungan data.
+              </p>
+            </div>
+          </section>
+
+          <section class="policy-section d-flex gap-3">
+            <span class="section-number">8</span>
+            <div class="w-100">
+              <h2 data-id="Kontak Developer" data-en="Developer Contact">
+                Kontak Developer
+              </h2>
+              <p
+                data-id="Jika memiliki pertanyaan, permintaan, atau keluhan terkait privasi dan penggunaan data, silakan hubungi developer melalui alamat email berikut:"
+                data-en="If you have questions, requests, or complaints regarding privacy and data usage, please contact the developer at the following email address:"
+              >
+                Jika memiliki pertanyaan, permintaan, atau keluhan terkait
+                privasi dan penggunaan data, silakan hubungi developer melalui
+                alamat email berikut:
+              </p>
+              <div class="info-note d-flex align-items-center gap-3">
+                <i class="bi bi-envelope-at fs-4"></i>
+                <div>
+                  <div
+                    class="small text-secondary"
+                    data-id="Email developer"
+                    data-en="Developer email"
+                  >
+                    Email developer
+                  </div>
+                  <a class="contact-link" href="mailto:masterappsdevelopment@gmail.com"
+                    >masterappsdevelopment@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+      <footer class="text-center py-4">
+        <div
+          data-id="Smart Tools Assist - Master Apps Development"
+          data-en="Smart Tools Assist - Master Apps Development"
+        >
+          Smart Tools Assist - Master Apps Development
+        </div>
+        <div
+          class="small mt-1"
+          data-id="Halaman kebijakan privasi untuk pengguna ekstensi Smart Tools Assist."
+          data-en="Privacy policy page for Smart Tools Assist extension users."
+        >
+          Halaman kebijakan privasi untuk pengguna ekstensi Smart Tools Assist.
+        </div>
+      </footer>
+    </main>
+    <script>
+      function setLanguage(lang) {
+        if (!["id", "en"].includes(lang)) lang = "id";
+        document.documentElement.lang = lang;
+        document.querySelectorAll("[data-id][data-en]").forEach((el) => {
+          el.textContent = el.getAttribute("data-" + lang);
+        });
+        document
+          .getElementById("btn-id")
+          .classList.toggle("active", lang === "id");
+        document
+          .getElementById("btn-en")
+          .classList.toggle("active", lang === "en");
+        document
+          .getElementById("btn-id")
+          .setAttribute("aria-pressed", String(lang === "id"));
+        document
+          .getElementById("btn-en")
+          .setAttribute("aria-pressed", String(lang === "en"));
+        try {
+          localStorage.setItem("epuskesmas_privacy_language", lang);
+        } catch (e) {}
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        let lang = "id";
+        try {
+          lang = localStorage.getItem("epuskesmas_privacy_language") || "id";
+        } catch (e) {}
+        setLanguage(lang);
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
